@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/544ea28f68.js" crossorigin="anonymous"></script>
+
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name = "viewport" content = "width=divice-width, initial-scale=1.0">
+        <title>Nenkin Refund Calculator</title>
+    </head>
+    <body>
+        <main>
+        <div class="title">
+            <h2>Nenkin Refund Calculator</h2>
+            <p>Please enter your monthly wage and number of months you have been working with that wage.</p>
+        </div>
+            <article class="question">
+            <!-- Input -->
+            <div class="question-title">
+                <h2>Enter your data</h2>
+                <button type="button" class="question-btn">
+                    <span class="plus-icon">
+                        <i class="fas fa-yen-sign"></i>
+                    </span>
+                    <span class="minus-icon">
+                        <i class="fas fa-wallet"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="wages">
+                <h4>First job</h4>
+                <p>Monthly Wage: <input type="number"></input></p>
+                <p>Months: <input type="number"></input></p>
+            </div>
+            <div class="wages">
+                <h4>Second job</h4>
+                <p>Monthly Wage: <input type="number"></input></p>
+                <p>Months: <input type="number"></input></p>
+            </div>
+
+            <!-- Output -->
+
+            <div class="question-text">
+                <div class="output">
+                <hr>
+
+                <div class="total">Here's the total refund</div>
+                <div class="after-tax">What you get after tax</div>
+                <hr>
+
+                <div class="nenkin">
+                <div class="nenkin-detail">how we get your result</div>
+                <div class="nenkin-rule">the lastest rule in 2021</div>
+                </div>
+                <hr>
+                </div>
+            </div>
+            </article>
+
+        </main>
+
+        <script src="app.js"></script>
+        <footer>
+            <a href="https://github.com/theyij/" target="_blank">
+                <span class="footer-sign">ijen</span>
+            </a>
+        </footer>
+    </body>
+</html>
