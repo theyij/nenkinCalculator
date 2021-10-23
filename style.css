@@ -52,7 +52,8 @@ hr{
 .question-text {
     font-family: var(--font);
     font-weight: 100;
-    display: none;
+    display: block;
+    /* display: none; */
 }
 .plus-icon{
     color: var(--black);

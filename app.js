@@ -1,11 +1,11 @@
 // show & hide answer
-let btns = document.querySelectorAll(".question-btn");
-for (let btn of btns){
-    btn.addEventListener("click", function(e){
-        let question = e.currentTarget.parentElement.parentElement;
-        question.classList.toggle("show-text");
-    })
-}
+// let btns = document.querySelectorAll(".question-btn");
+// for (let btn of btns){
+//     btn.addEventListener("click", function(e){
+//         let question = e.currentTarget.parentElement.parentElement;
+//         question.classList.toggle("show-text");
+//     })
+// }
 // let x = document.querySelector(".total")
 function getInputValue() {
         // Selecting the input element and get its value
@@ -19,6 +19,11 @@ function getInputValue() {
         document.querySelector(".refund").innerText = `¥${m*w *0.1}.`;
         document.querySelector(".afterTax").innerText = `¥${m*w *0.08}.`;
       }
+
+// read JSON file
+// console.log(data[0]);
+
+
 
 // let months = document.querySelectorAll(".months");
 // btns.addEventListener("click", function(e){

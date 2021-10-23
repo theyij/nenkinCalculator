@@ -18,6 +18,8 @@
         <div class="title">
             <h2>Nenkin Refund Calculator</h2>
             <p>Please enter your monthly wage and number of months you have been working with that wage.</p>
+            <ul class="exercise-list"></ul>
+
         </div>
             <article class="question">
             <!-- Input -->
@@ -38,41 +40,27 @@
                 <p>Months: <input id="month" class="months" type="number"></input></p>
                 <button type="button" onclick="getInputValue();">Get Value</button>
                 <hr>
-                <div class="result">
+                <!-- Summary -->
+                <div class="result summary">
                     <div>Total wage: <span class="total"></span></div>
                     <div>Total refund: <span class="refund"></span></div>
                     <div>Total refund after tax: <span class="afterTax"></span></div>
                 </div>
+                <!-- Detail -->
+                <div class="result detail">
+                </div>
 
             </div>
-            <!-- <div class="wages">
-                <h4>Second job</h4>
-                <p>Monthly Wage: <input type="number"></input></p>
-                <p>Months: <input type="number"></input></p>
-            </div> -->
-
-            <!-- Output -->
 
             <div class="question-text">
-                <div class="output">
                 <hr>
-
-                <div class="total">Here's the total refund</div>
-                <div class="after-tax">What you get after tax</div>
-                <hr>
-
-                <div class="nenkin">
-                <div class="nenkin-detail">how we get your result</div>
-                <div class="nenkin-rule">the lastest rule in 2021</div>
-                </div>
-                <hr>
-                </div>
+                <div class="nenkin rules"></div>
             </div>
             </article>
-
         </main>
 
         <script src="app.js"></script>
+        <script type="text/javascript" src="data.js"></script>
         <footer>
             <a href="https://github.com/theyij/" target="_blank">
                 <span class="footer-sign">ijen</span>
