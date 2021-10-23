@@ -1,34 +1,26 @@
-//toggle to show hidden text
+// show & hide answer
 let btns = document.querySelectorAll(".question-btn");
-
 for (let btn of btns){
     btn.addEventListener("click", function(e){
         let question = e.currentTarget.parentElement.parentElement;
         question.classList.toggle("show-text");
     })
 }
+// let x = document.querySelector(".total")
+function getInputValue() {
+        // Selecting the input element and get its value
+        let m = document.getElementById("month").value;
+        let w = document.getElementById("wage").value;
+        // Displaying the value
+        // alert(
+        //     `Received monthly wage ¥${w} for ${m} months. Your total salary is ¥${w*m/1000}K. `
+        // );
+        document.querySelector(".total").innerText = `¥${m*w}.`;
+        document.querySelector(".refund").innerText = `¥${m*w *0.1}.`;
+        document.querySelector(".afterTax").innerText = `¥${m*w *0.08}.`;
+      }
 
-
-//Read data form local .json File
-//ref: https://howtocreateapps.com/fetch-and-display-json-html-javascript/
-fetch('question.json')
-    .then(function (response) {
-    return response.json();
-    })
-    .then(function (data) {
-    appendData(data);
-    })
-    .catch(function (err) {
-    console.log(err);
-    });
-
-//display data from json
-function appendData(data) {
-    let ans = document.querySelectorAll(".myAns");
-
-    for (var i = 0; i < data.length; i++) {
-        var div = document.createElement("div");
-        div.innerHTML = 'A:' + data[i].answer;
-        mainContainer.appendChild(div);
-    }
-}
+// let months = document.querySelectorAll(".months");
+// btns.addEventListener("click", function(e){
+//     console.log(months);
+// })

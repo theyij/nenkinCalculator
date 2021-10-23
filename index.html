@@ -34,14 +34,22 @@
             </div>
             <div class="wages">
                 <h4>First job</h4>
-                <p>Monthly Wage: <input type="number"></input></p>
-                <p>Months: <input type="number"></input></p>
+                <p>Monthly Wage: <input id="wage" class="wages" type="number"></input></p>
+                <p>Months: <input id="month" class="months" type="number"></input></p>
+                <button type="button" onclick="getInputValue();">Get Value</button>
+                <hr>
+                <div class="result">
+                    <div>Total wage: <span class="total"></span></div>
+                    <div>Total refund: <span class="refund"></span></div>
+                    <div>Total refund after tax: <span class="afterTax"></span></div>
+                </div>
+
             </div>
-            <div class="wages">
+            <!-- <div class="wages">
                 <h4>Second job</h4>
                 <p>Monthly Wage: <input type="number"></input></p>
                 <p>Months: <input type="number"></input></p>
-            </div>
+            </div> -->
 
             <!-- Output -->
 
