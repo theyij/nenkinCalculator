@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
         <script src="https://kit.fontawesome.com/544ea28f68.js" crossorigin="anonymous"></script>
 
         <meta charset = "UTF-8">
@@ -15,56 +11,82 @@
     </head>
     <body>
         <main>
-        <div class="title">
-            <h2>Nenkin Refund Calculator</h2>
-            <p>Please enter your monthly wage and number of months you have been working with that wage.</p>
-            <ul class="exercise-list"></ul>
+            <div class="page-title">
+                <h2>Nenkin(Pension) Withdrawal Payment Calculator</h2>
+            </div>
 
-        </div>
-            <article class="question">
+            <article class="page">
+
             <!-- Input -->
-            <div class="question-title">
-                <h2>Enter your data</h2>
-                <button type="button" class="question-btn">
-                    <span class="plus-icon">
-                        <i class="fas fa-yen-sign"></i>
-                    </span>
-                    <span class="minus-icon">
-                        <i class="fas fa-wallet"></i>
-                    </span>
-                </button>
+            <div class="instruction section border">
+                <h3>Enter your salary</h3>
+                <p>If your salary changed, please click <span class="important">ADD</span>.</p>
+                <p>If all salary and period has been entered. please click <span class="important">Calculate</span>.</p>
+                <div class="single-period">
+                    <p>Monthly Salary During the Coverage Periods: <input id="wage" class="wages" type="number"></input></p>
+                    <p>Social Insurance Period Covered(Months): <input id="month" class="months" type="number"></input></p>
+                </div>
+
+                <table class=input>
+                    <tr>
+                        <th class="function">
+                            <div onclick="addInputValue()" class="button" id="button-3">
+                                <div id="circle"></div>
+                                <a href="#">Add another data</a>
+                            </div>
+                        </th>
+                        <th class="function">
+                            <div onclick="getInputValue()" class="button" id="button-3">
+                                <div id="circle"></div>
+                                <a href="#">Calculate</a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+
+
+
+<!--
+                <div class="input">
+                    <div onclick="addInputValue()" class="button" id="button-3">
+                        <div id="circle"></div>
+                        <a href="#">Add another data</a>
+                    </div>
+                    <div onclick="getInputValue()" class="button" id="button-3">
+                        <div id="circle"></div>
+                        <a href="#">Calculate</a>
+                    </div>
+                </div> -->
+
             </div>
-            <div class="wages">
-                <h4>First job</h4>
-                <p>Monthly Wage: <input id="wage" class="wages" type="number"></input></p>
-                <p>Months: <input id="month" class="months" type="number"></input></p>
-                <button type="button" onclick="getInputValue();">Get Value</button>
-                <hr>
+
                 <!-- Summary -->
-                <div class="result summary">
-                    <div>Total wage: <span class="total"></span></div>
-                    <div>Total refund: <span class="refund"></span></div>
-                    <div>Total refund after tax: <span class="afterTax"></span></div>
-                </div>
+            <div class="section border summary">
+                <h3>Calculation Summary</h3>
+
+                <div>Total wage: <span class="total"></span></div>
+                <div>Total refund: <span class="refund"></span></div>
+                <div>Total refund after tax: <span class="afterTax"></span></div>
+            </div>
+
+
                 <!-- Detail -->
-                <div class="result detail">
-                </div>
-
+            <div class="section border detail">
+                <h3>Here's your calculation details</h3>
             </div>
 
-            <div class="question-text">
-                <hr>
-                <div class="nenkin rules"></div>
-            </div>
+            <!-- nenkin rules from rules.js -->
+            <div class="rules"></div>
             </article>
         </main>
 
-        <script src="app.js"></script>
-        <script type="text/javascript" src="data.js"></script>
         <footer>
             <a href="https://github.com/theyij/" target="_blank">
-                <span class="footer-sign">ijen</span>
+                <span class="footer">ijen</span>
             </a>
         </footer>
-    </body>
+
+        <script type="text/javascript" src="./js/app.js"></script>
+        <script type="text/javascript" src="./js/rules.js"></script>
+</body>
 </html>

@@ -1,0 +1,35 @@
+@import "root.css";
+
+body{
+    background-color: var(--background);
+    color: var(--color);
+
+    margin: 30px;
+}
+
+h2{
+    font-family: var(--main-font);
+    color: var(--main);
+    text-shadow: var(--shadow);
+
+    text-align: center;
+    font-size: 28px;
+}
+
+h3{
+    font-family: var(--main-font);
+    color: var(--btn-color);
+    /* text-shadow: var(--shadow); */
+
+    font-size: 20px;
+}
+
+
+
+/* footer css */
+.footer{
+    font-family: var(--font);
+    color: var(--color);
+    text-align: center;
+    display: block;
+}
