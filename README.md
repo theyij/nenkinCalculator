@@ -1,6 +1,9 @@
 # nenkinCalculator
 To calculate nenkin refund in Japan under the new regulation in 2021
 
+## Live Project
+[nenkin-calculator-2021](nenkin-calculator-2021.netlify.app)
+
 
 ## Steps
 1. Create HTML and simple CSS layout
