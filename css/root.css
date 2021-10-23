@@ -1,0 +1,24 @@
+@import "main.css";
+@import "button.css";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP:wght@300&family=Roboto:wght@300&display=swap');
+
+
+/* variables for css */
+
+:root{
+    --main: rgba(70,93,76,0.5);
+    --shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+
+/* title font css */
+    --main-font: 'Abril Fatface', cursive;
+    --main-color: rgba(75, 78, 42, 1);
+
+/* content font css */
+    --font: 'Roboto', sans-serif;
+    --jp-font: 'Noto Sans JP', sans-serif;
+    --color: rgba(255, 255, 255, .9);
+
+    --background: #77969A;
+    --btn-color: rgba(201, 152, 51, 1);
+
+}
