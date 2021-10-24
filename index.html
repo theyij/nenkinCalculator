@@ -16,23 +16,29 @@
             </div>
 
             <article class="page">
-
             <!-- Input -->
             <div class="instruction section border">
                 <h3>Enter your salary</h3>
                 <p>If your salary changed, please click <span class="important">ADD</span>.</p>
                 <p>If all salary and period has been entered. please click <span class="important">Calculate</span>.</p>
                 <div class="single-period">
-                    <p>Monthly Salary During the Coverage Periods: <input id="wage" class="wages" type="number"></input></p>
-                    <p>Social Insurance Period Covered(Months): <input id="month" class="months" type="number"></input></p>
+                    <div class="group">
+                        <input id="wage" type="number" required="required"/><span class="highlight"></span><span class="bar"></span>
+                        <label>Average Monthly Salary During the Coverage Period</label>
+                    </div>
+                    <div class="group">
+                        <input id="month" type="number" required="required"/><span class="highlight"></span><span class="bar"></span>
+                        <label>Social Insurance Period Covered(Months)</label>
+                    </div>
+
                 </div>
 
                 <table class=input>
                     <tr>
                         <th class="function">
-                            <div onclick="addInputValue()" class="button" id="button-3">
+                            <div type="reset" onclick="addInputValue()" class="button" id="button-3">
                                 <div id="circle"></div>
-                                <a href="#">Add another data</a>
+                                <a href="#">Clear</a>
                             </div>
                         </th>
                         <th class="function">
@@ -43,30 +49,14 @@
                         </th>
                     </tr>
                 </table>
-
-
-
-<!--
-                <div class="input">
-                    <div onclick="addInputValue()" class="button" id="button-3">
-                        <div id="circle"></div>
-                        <a href="#">Add another data</a>
-                    </div>
-                    <div onclick="getInputValue()" class="button" id="button-3">
-                        <div id="circle"></div>
-                        <a href="#">Calculate</a>
-                    </div>
-                </div> -->
-
             </div>
 
                 <!-- Summary -->
             <div class="section border summary">
                 <h3>Calculation Summary</h3>
-
-                <div>Total wage: <span class="total"></span></div>
-                <div>Total refund: <span class="refund"></span></div>
-                <div>Total refund after tax: <span class="afterTax"></span></div>
+                <div>Total Income: <span class="total"></span></div>
+                <div><h4>Estimate Refund: </h4><span class="refund"></span></div>
+                <div><h4> Estimate Refund after income tax:</h4><span class="afterTax"></span></div>
             </div>
 
 
